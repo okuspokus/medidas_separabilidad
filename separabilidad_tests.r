@@ -1,8 +1,18 @@
-### Script para evaluar la separabilidad de muestras ####
-### Autora: Mariela Rajngewerc ##########################
-### Referencias: ver medidas_separabilidad.pdf ##########
+### Script para evaluar la separabilidad de muestras de datos satelitales #######
+
+### Autora: Mariela Rajngewerc ##################################################
+### Colaboradora: Natalia Morandeira (ejemplo 2 y loop) ###########################
+
+### Referencias de las funciones: ver medidas_separabilidad.pdf ################
 
 # Cada muestra corresponde al valor espectral de un conjunto de píxeles para N bandas
+# Las muestras son extraidas en regiones homogéneas de una imagen satelital
+# (por ejemplo, cada muestra corresponde a un polígono de una dada clase de información)
+# y el objetivo es cuantificar cuán separables o disímiles son esas muestras.
+# En la jerga de la teledetección satelital, a cada una de esas muestras se la conoce como
+# ROI (del inglés, "Region of interest") o AOI (del inglés, "Area of interest").
+# Evaluar la separabilidad de las muestras es relevante en el marco de las clasificaciones 
+# digitales de datos satelitales. 
 
 ##### Primero defino las funciones de las cuatro métricas ######
 #### No es necesario corregir nada de este código. Correr las funciones para que se carguen en R, pero modificar sólo desde "Acá empieza el ejemplo" :) 
